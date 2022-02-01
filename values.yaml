@@ -2,10 +2,10 @@
 replicaCount: 1
 
 image:
-  repository: public.ecr.aws/g3c6e9f4/test-django-app:latest
+  repository: public.ecr.aws/g3c6e9f4/test-django-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
