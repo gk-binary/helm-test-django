@@ -11,5 +11,6 @@ spec:
       targetPort: test-port
       protocol: TCP
       name: http
+      nodePort: {{ .Values.service.nodePort }}
   selector:
     {{- include "django-test.selectorLabels" . | nindent 4 }}
